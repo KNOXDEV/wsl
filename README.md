@@ -36,3 +36,7 @@ That's it! The software in this bucket should not be considered stable and may n
 * Whichever distro you install *first* will be your default from then on out. Your default distro is the one that opens when you `Right Click > Open Linux shell here` or use `wsl.exe` from the command line. You can reset your default by using [wslconfig](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#managing-multiple-linux-distributions).
 
 * Uninstalling a distro and reinstalling it with scoop will **DELETE** everything stored in that distros filesystem and set it back to scratch.
+
+* Yes, this works on Windows 10 LTSC :)
+
+* Yes, there are distros I haven't added yet. Feel free to add them or make changes.
