@@ -14,7 +14,7 @@ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 Then install this software bucket like this:
 ```powershell
-scoop bucket add wsl https://git.irs.sh/KNOXDEV/wsl
+scoop bucket add wsl https://github.com/KNOXDEV/wsl
 ```
 
 Now you can quickly and automatically install the software registered here. No Windows Store necessary.
