@@ -77,7 +77,7 @@ project:
    # Clone your fork of the repo into the current directory
    git clone https://github.com/<your-username>/wsl/
    # Navigate to the newly cloned directory
-   cd ctfbot
+   cd wsl
    # Assign the original repo to a remote called "upstream"
    git remote add upstream https://github.com/KNOXDEV/wsl/
    ```
@@ -85,8 +85,8 @@ project:
 2. If you cloned a while ago, get the latest changes from upstream:
 
    ```bash
-   git checkout main
-   git pull upstream main
+   git checkout master
+   git pull upstream master
    ```
 
 3. Create a new topic branch (off the main project development branch) to
