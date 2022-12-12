@@ -6,7 +6,7 @@
     "url": "https://aka.ms/wslubuntu2204",
     "shortcuts": [
         [
-            "ubuntu2204.exe",
+            "ubuntu.exe",
             "Ubuntu 22.04 LTS"
         ]
     ],
@@ -14,7 +14,11 @@
         "script": [
             "Get-Item \"$dir\\wslubuntu2204\" | Rename-Item -NewName \"ubuntu2204.zip\"",
             "Expand-Archive -Path \"$dir\\ubuntu2204.zip\" -DestinationPath \"$dir\"",
-            "Remove-Item \"$dir\\ubuntu2204.zip\""
+            "Remove-Item \"$dir\\ubuntu2204.zip\"",
+            "Get-Item \"$dir\\*x64.appx\" | Rename-Item -NewName \"ubuntu2204.zip\"",
+            "Expand-Archive -Force -Path \"$dir\\ubuntu2204.zip\" -DestinationPath \"$dir\"",
+            "Remove-Item \"$dir\\ubuntu2204.zip\"",
+            "Get-Item \"$dir\\*.appx\" | Remove-Item"
         ]
     },
     "uninstaller": {
