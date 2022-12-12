@@ -1,0 +1,23 @@
+{
+    "homepage": "https://www.microsoft.com/store/apps/9PN20MSR04DW",
+    "description": "Ubuntu 22.04 LTS on WSL",
+    "license": "Proprietary",
+    "version": "22.04",
+    "url": "https://aka.ms/wslubuntu2204",
+    "shortcuts": [
+        [
+            "ubuntu2204.exe",
+            "Ubuntu 22.04 LTS"
+        ]
+    ],
+    "installer": {
+        "script": [
+            "Get-Item \"$dir\\wslubuntu2204\" | Rename-Item -NewName \"ubuntu2204.zip\"",
+            "Expand-Archive -Path \"$dir\\ubuntu2204.zip\" -DestinationPath \"$dir\"",
+            "Remove-Item \"$dir\\ubuntu2204.zip\""
+        ]
+    },
+    "uninstaller": {
+        "script": "wslconfig /u Ubuntu-22.04"
+    }
+}
