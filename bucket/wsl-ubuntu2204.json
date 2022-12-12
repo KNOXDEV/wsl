@@ -16,7 +16,7 @@
                     "Remove-Item \"$dir\\ubuntu2204.zip\"",
                     "Get-Item \"$dir\\*.appx\" | Remove-Item"
                 ]
-            },
+            }
         },
         "arm64": {
             "installer": {
@@ -29,7 +29,7 @@
                     "Remove-Item \"$dir\\ubuntu2204.zip\"",
                     "Get-Item \"$dir\\*.appx\" | Remove-Item"
                 ]
-            },
+            }
         }
     },
     "shortcuts": [
