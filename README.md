@@ -27,11 +27,11 @@ For a full list of current supported distros, check the bucket, or just run:
 scoop search wsl-
 ```
 
-That's it! The software in this bucket should not be considered stable and may not install successfully while its a Work In Progress.
+That's it! The software in this bucket should not be considered stable and may not install successfully depending on the whims of Microsoft.
 
 ### notes
 
-* I decided to not add hashes to the manifest due to a lack of consistent versioning information. It's unclear if Microsoft will push in-place upgrades of the distro download links I'm using, but that is what I suspect, in which case the hashes do more harm than good. The installers themselves have built-in integrity checks, so I'm not too concerned about it.
+* I decided to not add hashes to the manifest due to a lack of consistent versioning information. ~~It's unclear if Microsoft will push in-place upgrades of the distro download links I'm using, but that is what I suspect, in which case the hashes do more harm than good.~~ (This did happen, see issue #4) The installers themselves have built-in integrity checks, so I'm not too concerned about it.
 
 * Whichever distro you install *first* will be your default from then on out. Your default distro is the one that opens when you `Right Click > Open Linux shell here` or use `wsl.exe` from the command line. You can reset your default by using [wslconfig](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#managing-multiple-linux-distributions).
 
